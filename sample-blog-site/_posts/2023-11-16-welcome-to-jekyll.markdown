@@ -117,21 +117,21 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
                 var commentInfo = document.createElement('div');
                 commentInfo.classList.add('comment-info');              
                 var nameDiv = document.createElement('div');
-                nameDiv.innerHTML = ${item.commentBy};
+                nameDiv.innerHTML = item.commentBy;
                 commentInfo.appendChild(nameDiv);
                 // Create the comment-text div
                 var commentText = document.createElement('div');
                 commentText.classList.add('comment-text');
                 // Create the paragraph inside comment-text
                 var paragraph = document.createElement('p');
-                paragraph.textContent = ${item.comment};
+                paragraph.textContent = item.comment;
                 commentText.appendChild(paragraph);
                 // Create the comment-date div
                 var commentDate = document.createElement('div');
                 commentDate.classList.add('comment-date');
                 // Create the small element inside comment-date
                 var smallElement = document.createElement('small');
-                smallElement.textContent = ${item.timestamp};
+                smallElement.textContent = item.timestamp;
                 commentDate.appendChild(smallElement);
                 // Append all the created elements to the main container
                 commentContainer.appendChild(commentInfo);
