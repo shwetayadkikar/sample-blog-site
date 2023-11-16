@@ -78,7 +78,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
           const comment = commentInput.value;             
           const email = emailInput.value;      
           try {
-                const response = await fetch("https://azconf-demo-func-002.azurewebsites.net/api/Comment?page=2023-11-16-welcome-to-jekyll", {
+                const response = await fetch("/api/Comment?page=2023-11-16-welcome-to-jekyll", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -102,7 +102,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
         }
  async function fetchData() {
             try {
-                const response = await fetch('https://azconf-demo-func-002.azurewebsites.net/api/GetComments?page=2023-11-16-welcome-to-jekyll');
+                const response = await fetch('/api/GetComments?page=2023-11-16-welcome-to-jekyll');
                 const data = await response.json();              
                 processApiData(data);
             } catch (error) {
