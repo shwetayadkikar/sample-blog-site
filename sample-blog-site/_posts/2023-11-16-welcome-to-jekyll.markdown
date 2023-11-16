@@ -36,7 +36,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
       <input type="email" id="email" name="email" required=""><br>
       <br>
       <textarea id="comment" name="comment" style="width:100%" placeholder="Enter your comment..." required=""></textarea><br>  
-      <button type="submit">Submit Comment</button>
+      <button type="submit">Submit</button>
   </form>
   </div> 
 <br/>
