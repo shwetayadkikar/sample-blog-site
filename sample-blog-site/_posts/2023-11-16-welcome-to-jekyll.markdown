@@ -131,7 +131,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
                 commentDate.classList.add('comment-date');
                 // Create the small element inside comment-date
                 var smallElement = document.createElement('small');
-                smallElement.textContent = (new Date(item.timestamp)).ToString();
+                smallElement.textContent = (new Date(item.timestamp)).toString();
                 commentDate.appendChild(smallElement);
                 // Append all the created elements to the main container
                 commentContainer.appendChild(commentInfo);
