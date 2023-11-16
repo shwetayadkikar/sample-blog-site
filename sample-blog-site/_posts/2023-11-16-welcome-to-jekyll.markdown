@@ -110,7 +110,8 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
             }
         }       
         function processApiData(data) {
-            const contentDiv = document.getElementById('comment-container-list');            
+            const contentDiv = document.getElementById('comment-container-list');   
+            contentDiv.innerHtml = "";         
             data.forEach((item, index) => {               
                 var commentContainer = document.createElement('div');
                 commentContainer.classList.add('comment-container');
